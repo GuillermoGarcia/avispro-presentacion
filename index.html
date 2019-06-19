@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <!-- Presentation created using reveal.js: https://github.com/hakimel/reveal.js -->
+    <!-- Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se -->
+
+    <title>Present Ionic Framework</title>
+
+    <meta name="description" content="Presentación Asistente Visual para Personajes de Rol Online (Avispro)">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/main.css">
+      
+    <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,600,200italic,400italic,600italic|Pacifico' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <div class="slides">
+
+        <section>
+          <div class="logos">
+            <img id="logoRotate" class="logo" src="img/avispro-logo.svg" />
+            <img id="logoStatic" class="logo" src="img/avispro-logo.svg" />
+          </div>
+        </section>
+
+
+        <section class="titulo-animado">
+          <h2 id="A">A<span>sistente</span></h2>
+          <h2 id="VIS">VIS<span>ual</span></h2>
+          <h5>para</h5>
+          <h2 id="P">P<span>ersonajes</span></h2>
+          <h5>de</h5>
+          <h2 id="R">R<span>ol</span></h2>
+          <h2 id="O">O<span>nline</span></h2>
+        </section>
+
+
+        <section class="movil">
+          <h2 class="titulo">AVISPR<span>O</span> Android</h2>
+          <img src="img/movil.png" />
+        </section>
+
+
+        <section class="video">
+          <h2 class="titulo">AVISPR<span>O</span> Android</h2>
+          <ul>
+            <li>Plataforma: Android Studio</li>
+            <li>Lenguaje: Java</li>
+            <li>Base de Datos: Firebase</li>
+            <li>Identificación de usuarios a través de Firebase Authentication</li>
+            <li>Avatars a través de Firebase Storage</li>
+          </ul>
+        </section>
+
+
+        <section class="video">
+          <h2 class="titulo">AVISPR<span>O</span> Android</h2>
+          <video id="video" src="webm/avispro.webm" autoplay controls></video>
+        </section>
+
+
+        <section class="api">
+          <h2 class="titulo">AVISPR<span>O</span> API</h2>
+          <img src="img/api.png" />
+        </section>
+
+
+        <section>
+          <h2 class="titulo">AVISPR<span>O</span> API</h2>
+          <ul>
+              <li>Lenguaje: Python</li>
+              <li>Microframework: Flask</li>
+              <li>Plugins: SQLAlchemy y Alembic</li>
+              <li>Base de Datos: Postgres (Amazon RDS)</li>
+              <li>Localización: Heroku (avispro-api.herokuapp.com/api/v1)</li>
+              <li>Extra: Conexión con Firebase</li>
+              <li>Envío de Datos a través del Body en formato JSON</li>
+              <li>Respuesta de la API en formato JSON</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h2 class="titulo">AVISPR<span>O</span> API</h2>
+          <h4>Usuarios</h4>
+          <ul>
+              <li>Registrar Usuario:<br/> > POST /usuarios</li>
+              <li>Obtener Token Login:<br/> > POST /tokens</li>
+              <li>Obtener Usuarios:<br/> > GET /usuarios</li>
+              <li>Obtener un Usuario:<br/> > GET /usuarios/idUsuario</li>
+              <li>Obtener un Usuario:<br/> > PUT /usuarios/idUsuario</li>
+          </ul>
+        </section>
+
+
+        <section>
+            <h2 class="titulo">AVISPR<span>O</span> API</h2>
+            <h4>Habilidades Base</h4>
+            <ul>
+                <li>Crear Habilidades Base:<br/> > POST /habilidades</li>
+                <li>Obtener Todas las Habilidades Base:<br/> > GET /habilidades</li>
+                <li>Obtener una Habilidad Base:<br/> > GET /habilidades/idHabilidad</li>
+                <li>Actualizar Habilidad Base:<br/> > PUT /habilidades/idHabilidad</li>
+            </ul>
+          </section>
+
+
+          <section>
+          <h2 class="titulo">AVISPR<span>O</span> API</h2>
+          <h4>Personajes</h4>
+          <ul>
+              <li>Crear Personaje:<br/> > POST /personajes</li>
+              <li>Obtener Personaje:<br/> > GET /personajes</li>
+              <li>Obtener Personaje:<br/> > GET /personajes/idPersonaje</li>
+              <li>Actualizar Personaje:<br/> > PUT /personajes/idPersonaje</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h2 class="titulo">AVISPR<span>O</span> API</h2>
+          <h4>Habilidades de Personajes</h4>
+          <ul>
+              <li>Aprender Habilidad:<br/> > POST /personajes/idPersonaje/habilidades/idHabilidad</li>
+              <li>Obtener Habilidades del Personaje:<br/> > GET /personajes/idPersonaje/habilidades</li>
+              <li>Obtener Habilidad:<br/> > GET /personajes/idPersonaje/habilidades/idHabPj</li>
+              <li>Actualizar Habilidad:<br/> > PUT /personajes/idPersonaje/habilidades/idHabPj</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h2 class="titulo">AVISPR<span>O</span> API</h2>
+          <h4>Combate</h4>
+          <ul>
+              <li>Crear Combate:<br/> > POST /combates</li>
+              <li>Unirse Pj al Combate:<br/> > POST /combates/idCombate/pj/idCombatiente</li>
+              <li>Unirse Pnj al Combate:<br/> > POST /combates/idCombate/pnj/idCombatiente</li>
+              <li>Obtener Todos los Combates:<br/> > GET /combates</li>
+              <li>Obtener un Combate:<br/> > GET /combates/idCombate</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h2 class="titulo">AVISPR<span>O</span> API</h2>
+          <h4>Combatiente</h4>
+          <ul>
+              <li>Crear Combatiente:<br/> > POST /combatientes</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h2 class="titulo">AVISPR<span>O</span> Firebase</h2>
+          <img src="img/Firebase.png">
+        </section>
+
+
+        <section>
+          <h2 class="titulo">AVISPR<span>O</span> Postgres</h2>
+          <img src="img/postgres.png">
+        </section>
+
+
+        <section>
+          <h1>Gracias Por<br />su Atencion</h1>
+        </section>
+
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/avispro.js"></script>
+
+  </body>
+</html>
