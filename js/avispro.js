@@ -9,7 +9,6 @@ Reveal.initialize({
 
 // Slide changed listener
 Reveal.addEventListener('slidechanged', function (event) {
-  console.log(event.indexh);
   // if is slide 1 then launch title animation
   if (event.indexh == 1) {
     titulo.play();
