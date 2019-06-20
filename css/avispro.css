@@ -4,28 +4,28 @@
 
 @font-face {
   font-family: 'Overseer';
-  src: url('./fonts/Overseer.otf') format('otf');
+  src: url('./font/Overseer.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Overseer_Italic';
-  src: url('./assets/fonts/Overseer_Italic.otf') format('otf');
+  src: url('./font/Overseer_Italic.otf') format('otf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Overseer_Bold';
-  src: url('./assets/fonts/Overseer_Bold.otf') format('otf');
+  src: url('./font/Overseer_Bold.otf') format('otf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Overseer Italic Bold';
-  src: url('./assets/fonts/Overseer_Bold_Italic.otf') format('otf');
+  src: url('./font/Overseer_Bold_Italic.otf') format('otf');
   font-weight: bold;
   font-style: italic;
 }
