@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: 'Overseer';
-  src: url('./font/Overseer.otf') format('otf');
+  src: url('font/Overseer.otf') format('otf');
   font-weight: normal;
   font-style: normal;
 }
