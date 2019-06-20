@@ -11,21 +11,21 @@
 
 @font-face {
   font-family: 'Overseer_Italic';
-  src: url('./font/Overseer_Italic.otf') format('otf');
+  src: url('./css/font/Overseer_Italic.otf') format('otf');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Overseer_Bold';
-  src: url('./font/Overseer_Bold.otf') format('otf');
+  src: url('./css/font/Overseer_Bold.otf') format('otf');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Overseer Italic Bold';
-  src: url('./font/Overseer_Bold_Italic.otf') format('otf');
+  src: url('./css/font/Overseer_Bold_Italic.otf') format('otf');
   font-weight: bold;
   font-style: italic;
 }
